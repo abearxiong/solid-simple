@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"allowUnreachableCode": true,
+		"importHelpers": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+		"noImplicitAny": false,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"strict": true,
+		"typeRoots": ["node_modules/@types"],
+		"paths": {
+			"@/*": ["src/*"],
+			"*": ["types/*"]
+		},
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"allowJs": true,
+		"plugins": [{ "name": "typescript-plugin-css-modules" }]
+	}
+}
