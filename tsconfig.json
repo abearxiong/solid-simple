@@ -20,7 +20,6 @@
 		},
 		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
-		"allowJs": true,
-		"plugins": [{ "name": "typescript-plugin-css-modules" }]
+		"allowJs": true
 	}
 }

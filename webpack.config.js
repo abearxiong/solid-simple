@@ -17,19 +17,7 @@ const config = {
     runtimeChunk: 'single',
     minimize: false
   },
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-  },
-  output: {
-    publicPath: `auto`,
-  },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    compress: true,
     hot: true,
     allowedHosts: 'all',
     historyApiFallback: {
@@ -46,14 +34,6 @@ const config = {
   stats: 'errors-warnings',
   module: {
     rules: [
-      {
-        test: /\.(jpe?g|png|svg|gif|bmp)/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(woff2?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        type: 'asset/inline',
-      },
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
